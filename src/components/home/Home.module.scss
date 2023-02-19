@@ -1,0 +1,46 @@
+.container {
+    background-color: #F7F3EE;
+    transition: background-color 0.5s;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+.dark {
+    background-color: black;
+
+    .description {
+        h1 {
+            visibility: hidden;
+        }
+        h2 {
+            color: white;
+        }
+    }
+
+    .buttons {
+        visibility: hidden;
+    }
+
+    h1 { visibility: hidden;}
+}

@@ -1,0 +1,11 @@
+.container {
+    img {
+        border-radius: 10px;
+        max-width: 370px;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

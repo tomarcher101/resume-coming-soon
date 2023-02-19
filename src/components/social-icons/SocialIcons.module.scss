@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    gap: 24px;
+
+    img {
+        max-width: 38px;
+        max-height: 38px;
+
+        &:hover {
+            opacity: 40%;
+            cursor: pointer;
+        }
+    }
+}

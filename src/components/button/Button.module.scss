@@ -1,0 +1,15 @@
+.button {
+    background-color: #232323;
+    color: white;
+    font-family: "Share Tech Mono";
+    width: 264px;
+    height: 45px;
+    border-radius: 0;
+    font-size: 20px;
+    line-height: 23px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 30%;
+    }
+}
