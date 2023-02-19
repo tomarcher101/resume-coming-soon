@@ -1,20 +1,25 @@
 .container {
-    background-color: #F7F3EE;
-    transition: background-color 0.5s;
+    box-sizing: border-box;
+    background-color: #f7f3ee;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 48px;
-    padding: 18px;
-    overflow: hidden;
+    padding: 24px;
+
+    @media (max-width: 520px) {
+        box-sizing: content-box;
+        justify-content: flex-start;
+        min-height: 100vh;
+        height: auto;
+    }
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 48px;
 
@@ -25,6 +30,9 @@
     }
 }
 
+.light {
+    transition: background-color 0.5s;
+}
 
 .dark {
     background-color: black;
@@ -42,5 +50,7 @@
         visibility: hidden;
     }
 
-    h1 { visibility: hidden;}
+    h1 {
+        visibility: hidden;
+    }
 }
