@@ -17,6 +17,10 @@
     }
 }
 
+.description {
+    transition: 0.5;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -31,11 +35,18 @@
 }
 
 .light {
-    transition: background-color 0.5s;
+    transition: background-color 1s;
+
+    .buttons {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s;
+    }
 }
 
 .dark {
     background-color: black;
+    transition: background-color 1s;
 
     .description {
         h1 {
@@ -48,6 +59,7 @@
 
     .buttons {
         visibility: hidden;
+        opacity: 0;
     }
 
     h1 {
