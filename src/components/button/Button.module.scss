@@ -8,6 +8,10 @@
     font-size: 20px;
     line-height: 23px;
 
+    @media (max-width: 330px) {
+        width: 80vw;
+    }
+
     &:hover {
         cursor: pointer;
         opacity: 30%;
