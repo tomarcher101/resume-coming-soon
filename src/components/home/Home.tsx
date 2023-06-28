@@ -7,7 +7,7 @@ import styles from "./Home.module.scss"
 const Home = () => {
   const [isMouseOverAvatar, setIsMouseOverAvatar] = useState(false)
   const className = `${styles.container} ${isMouseOverAvatar ? styles.dark : styles.light}`
-  const h2Text = isMouseOverAvatar ? "Site is under construction." : "Software Developer";
+  const h2Text = isMouseOverAvatar ? "Site is currently undergoing a redesign!" : "Software Developer";
 
   return (
     <div className={className}>
@@ -15,6 +15,7 @@ const Home = () => {
       <div className={styles.description}>
         <h1>Tom Archer</h1>
         <h2>{h2Text}</h2>
+        <h3>Please try again later!</h3>
       </div>
       <div className={styles.buttons}>
         <Button link={"./TomArcherCV20230216.pdf"}>View Resume</Button>

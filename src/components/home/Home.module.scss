@@ -42,6 +42,10 @@
         opacity: 1;
         transition: opacity 1s;
     }
+
+    h3 {
+        opacity: 0;
+    }
 }
 
 .dark {
@@ -49,11 +53,21 @@
     transition: background-color 1s;
 
     .description {
+        position: relative;
+
         h1 {
             visibility: hidden;
         }
         h2 {
             color: white;
+            transition: color 1s;
+        }
+        h3 {
+            opacity: 1;
+            transition: opacity 2s ease-out 0.5s;
+            position: absolute;
+            top: 120px;
+            left: 164px;
         }
     }
 
