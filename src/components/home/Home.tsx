@@ -17,7 +17,7 @@ const Home = () => {
         <h2>Software Developer</h2>
       </div>
       <div className={styles.buttons}>
-        <Button link={"./TomArcherCV20230216.pdf"}>View Resume</Button>
+        <Button link={"./TomArcherCV.pdf"}>View Resume</Button>
         <SocialIcons />
       </div>
     </div>
