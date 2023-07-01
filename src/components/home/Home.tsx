@@ -14,8 +14,7 @@ const Home = () => {
       <Avatar setIsMouseOverAvatar={setIsMouseOverAvatar} />
       <div className={styles.description}>
         <h1>Tom Archer</h1>
-        <h2>{h2Text}</h2>
-        <h3>Please try again later!</h3>
+        <h2>Software Developer</h2>
       </div>
       <div className={styles.buttons}>
         <Button link={"./TomArcherCV20230216.pdf"}>View Resume</Button>

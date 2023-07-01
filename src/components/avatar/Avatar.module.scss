@@ -1,11 +1,59 @@
 .container {
-    img {
-        border-radius: 10px;
-        max-width: 370px;
-        width: 100%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 370px;
 
-        &:hover {
-            cursor: pointer;
+    @media (max-width: 420px) {
+        height: 90vw;
+    }
+
+    .imageContainer {
+        width: 370px;
+
+        @media (max-width: 420px) {
+            width: 100%;
+        }
+
+        .lightImage {
+            opacity: 1;
+            transition: opacity 1s ease-out;
+            
+            &:hover {
+                opacity: 0;
+                transition: opacity 1s ease-out;
+            }
+        }
+
+        img {
+            position: absolute;
+            border-radius: 10px;
+
+            @media (max-width: 420px) {
+                width: 100%;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .darkText {
+        position: absolute;
+        bottom: -160px;
+        opacity: 0;
+        color: white;
+        transition: opacity 1s ease-out;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        &.dark {
+            opacity: 1;
+            transition: opacity 2s ease-out 1s;
         }
     }
 }

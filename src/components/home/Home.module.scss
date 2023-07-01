@@ -4,21 +4,21 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 48px;
     padding: 24px;
+    padding-top: 100px;
 
     @media (max-width: 520px) {
-        box-sizing: content-box;
         justify-content: flex-start;
-        min-height: 100vh;
         height: auto;
+        padding: 7%;
     }
-}
 
-.description {
-    transition: 0.5;
+    &.dark {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .buttons {
@@ -35,48 +35,30 @@
 }
 
 .light {
-    transition: background-color 1s;
+    transition: background-color 2s;
 
-    .buttons {
-        visibility: visible;
+    .description {
         opacity: 1;
-        transition: opacity 1s;
+        transition: opacity 1s ease-in 1s;
     }
 
-    h3 {
-        opacity: 0;
+    .buttons {
+        opacity: 1;
+        transition: opacity 1s ease-in 1s;
     }
 }
 
 .dark {
     background-color: black;
-    transition: background-color 1s;
+    transition: background-color 2s;
 
     .description {
-        position: relative;
-
-        h1 {
-            visibility: hidden;
-        }
-        h2 {
-            color: white;
-            transition: color 1s;
-        }
-        h3 {
-            opacity: 1;
-            transition: opacity 2s ease-out 0.5s;
-            position: absolute;
-            top: 120px;
-            left: 164px;
-        }
+        opacity: 0;
+        transition: opacity 1s;
     }
 
     .buttons {
-        visibility: hidden;
         opacity: 0;
-    }
-
-    h1 {
-        visibility: hidden;
+        transition: opacity 1s;
     }
 }
